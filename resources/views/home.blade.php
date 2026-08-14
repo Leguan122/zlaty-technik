@@ -20,7 +20,7 @@
             <p>Navrhujem a riešim menšie technické projekty — od webstránky cez senzor alebo 3D diel až po notebook, ktorý potrebuje servis.</p>
             <div class="actions">
                 <a class="btn btn-primary" href="#sluzby">Pozrieť služby</a>
-                <a class="btn btn-ghost" href="{{ route('contact') }}">Mám konkrétny problém</a>
+                <a class="btn btn-ghost" href="{{ route('contact') }}">Kontakt</a>
             </div>
             <div class="intro-note">
                 <span>Zvolen / BB a okolie</span>
@@ -62,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            <p class="mini-caption">Neskôr sem dáme reálne fotky projektov namiesto ilustrácií.</p>
+            <p class="mini-caption">Reálne ukážky projektov budú pribúdať postupne.</p>
         </div>
     </div>
 </section>
@@ -70,7 +70,7 @@
 <section class="shell section service-index" id="sluzby">
     <div class="index-head">
         <div><div class="eyebrow">služby</div><h2>Čo viem reálne ponúknuť</h2></div>
-        <p>Bez balíčkov „Basic / Pro / Enterprise“. Každá zákazka začína tým, čo potrebuješ vyriešiť.</p>
+        <p>Bez zbytočných balíčkov. Každá zákazka začína tým, čo potrebujete vyriešiť.</p>
     </div>
 
     <a class="service-row" href="{{ route('web-it') }}">
@@ -89,8 +89,8 @@
 
 <section class="shell section">
     <div class="section-title">
-        <div><div class="eyebrow">ukážky</div><h2>Tu majú byť konkrétne veci, nie marketing.</h2></div>
-        <p>Keď nazbierame reálne fotky a hotové zákazky, táto časť bude hlavný dôvod, prečo stránke veriť.</p>
+        <div><div class="eyebrow">ukážky</div><h2>Ukážky konkrétnych projektov</h2></div>
+        <p>Reálne ukážky budú pribúdať postupne podľa dokončených projektov a zákaziek.</p>
     </div>
 
     <div class="projects-strip">
@@ -133,10 +133,10 @@
 
 <section class="shell section" style="padding-top:24px">
     <div class="human-cta">
-        <h2>Máš problém, nápad alebo niečo, čo potrebuješ vyrobiť?</h2>
+        <h2>Máte problém, nápad alebo niečo, čo potrebujete vyrobiť?</h2>
         <div class="human-cta-right">
-            <p>Stačí stručne napísať čo potrebuješ. Ak to nie je vec pre mňa, poviem to rovno.</p>
-            <a class="btn" href="{{ route('contact') }}">Napísať mi →</a>
+            <p>Stačí stručne napísať, čo potrebujete. Ak sa zákazke nevenujem, poviem to rovno.</p>
+            <a class="btn" href="{{ route('contact') }}">Kontaktovať ma →</a>
         </div>
     </div>
 </section>
