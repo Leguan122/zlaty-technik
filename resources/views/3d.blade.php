@@ -5,9 +5,9 @@
 <section class="shell page-head">
     <div>
         <div class="eyebrow">3D modelovanie & tlač</div>
-        <h1>Keď potrebuješ konkrétny diel, nie katalógový kompromis.</h1>
+        <h1>Keď potrebujete konkrétny diel, nie katalógový kompromis.</h1>
         <p>Jednoduché krabičky, držiaky, adaptéry, náhradné diely a prototypy podľa rozmerov alebo náčrtu.</p>
-        <div class="actions"><a class="btn btn-primary" href="{{ route('contact') }}">Mám diel na výrobu</a></div>
+        <div class="actions"><a class="btn btn-primary" href="{{ route('contact') }}">Dopyt na 3D výrobu</a></div>
     </div>
     <div class="page-art">
         <svg viewBox="0 0 700 430" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -40,9 +40,9 @@
 
 <section class="shell section" style="padding-top:18px">
     <div class="steps">
-        <div class="step"><div class="step-num">01</div><strong>Rozmer alebo náčrt</strong><span>Fotka, jednoduchý výkres alebo rozmery.</span></div>
-        <div class="step"><div class="step-num">02</div><strong>Model</strong><span>Navrhnem jednoduchý 3D diel a skontrolujeme rozmery.</span></div>
-        <div class="step"><div class="step-num">03</div><strong>Tlač</strong><span>Po odsúhlasení model vytlačíme a doladíme.</span></div>
+        <div class="step"><div class="step-num">01</div><strong>Rozmer alebo náčrt</strong><span>Pošlite fotografiu, jednoduchý výkres alebo rozmery.</span></div>
+        <div class="step"><div class="step-num">02</div><strong>Model</strong><span>Navrhnem jednoduchý 3D diel a pred tlačou sa skontrolujú rozmery.</span></div>
+        <div class="step"><div class="step-num">03</div><strong>Tlač</strong><span>Po odsúhlasení sa model vytlačí a podľa potreby doladí.</span></div>
     </div>
 </section>
 @endsection
