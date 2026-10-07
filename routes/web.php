@@ -7,4 +7,5 @@ Route::view('/weby-it', 'web-it')->name('web-it');
 Route::view('/iot', 'iot')->name('iot');
 Route::view('/3d', '3d')->name('3d');
 Route::view('/pocitace', 'repairs')->name('repairs');
+Route::view('/cennik', 'pricing')->name('pricing');
 Route::view('/kontakt', 'contact')->name('contact');

@@ -1,6 +1,6 @@
-<section class="shell section pricing-section" id="cennik" style="padding-top:18px">
+<section class="shell section pricing-section" id="{{ $pricingId ?? 'cennik' }}" style="padding-top:18px">
     <div class="section-title">
-        <div><div class="eyebrow">Cena</div><h2>Orientačný cenník</h2></div>
+        <div><div class="eyebrow">Cena</div><h2>{{ $pricingTitle ?? 'Orientačný cenník' }}</h2></div>
     </div>
     <div class="pricing-panel">
         <table class="pricing-table">
@@ -16,8 +16,12 @@
             @foreach($notes as $note)
                 <p>{{ $note }}</p>
             @endforeach
+            @if($showDisclaimer ?? true)
             <p>Nie som platiteľ DPH. Uvedené ceny sú orientačné; konečnú cenu Vám potvrdím po posúdení zadania alebo diagnostike. Ďalšie práce a materiál účtujem až po Vašom odsúhlasení.</p>
+            @endif
         </div>
+        @if($showCta ?? true)
         <a class="btn btn-primary" href="{{ route('contact') }}">Dopyt na cenovú ponuku</a>
+        @endif
     </div>
 </section>

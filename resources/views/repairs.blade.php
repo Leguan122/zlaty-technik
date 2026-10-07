@@ -7,7 +7,7 @@
         <div class="eyebrow">Počítače & notebooky</div>
         <h1>Najprv zistiť problém. Potom meniť diely.</h1>
         <p>Diagnostika, upgrade, softvérové problémy a vybrané opravy počítačov a notebookov.</p>
-        <div class="actions"><a class="btn btn-primary" href="{{ route('contact') }}">Dopyt na servis</a><a class="btn btn-ghost" href="#cennik">Orientačný cenník</a></div>
+        <div class="actions"><a class="btn btn-primary" href="{{ route('contact') }}">Dopyt na servis</a></div>
     </div>
     <div class="page-art">
         <svg viewBox="0 0 700 430" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -45,19 +45,5 @@
         <div class="step"><div class="step-num">03</div><strong>Dohoda</strong><span>Ak oprava dáva zmysel, dohodneme ďalší postup.</span></div>
     </div>
 </section>
-@include('partials.pricing', [
-    'items' => [
-        ['Základná diagnostika PC alebo notebooku', '15 €'],
-        ['Inštalácia systému a ovládačov', 'od 30 €'],
-        ['Výmena SSD alebo RAM a overenie funkčnosti', 'od 20 €'],
-        ['Čistenie a prepastovanie', 'od 35 €'],
-        ['Ostatné servisné a softvérové práce', '20 €/hod.'],
-    ],
-    'notes' => [
-        'Ceny sa vzťahujú na prácu. Náhradné diely a licencie sa účtujú osobitne. Pri čistení a prepastovaní je v cene bežná teplovodivá pasta; prípadné ďalšie potrebné materiály sa dohodnú vopred.',
-        'Ak odsúhlasíte následnú opravu, zaplatených 15 € za diagnostiku sa odpočíta z ceny práce.',
-        'Inštalácia systému nezahŕňa licenciu ani zálohovanie či prenos Vašich údajov. Tieto úkony sa dohodnú osobitne.',
-        'Pri hodinovej práci sa vopred dohodneme na odhade a cenovom limite. Doprava sa riadi cenníkom na kontaktnej stránke.',
-    ],
-])
+@include('partials.pricing', config('pricing.repairs'))
 @endsection
