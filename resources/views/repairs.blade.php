@@ -25,7 +25,7 @@
     <div class="visual-grid">
         <div class="visual-tile">
             <div class="card-art"><svg viewBox="0 0 500 280"><rect width="500" height="280" fill="#ded9cd"/><rect x="92" y="48" width="316" height="176" rx="9" fill="#fbfaf6" stroke="#181816" stroke-width="4"/><rect x="119" y="76" width="262" height="120" fill="#d3cec2" stroke="#181816" stroke-width="4"/><path d="M64 235h372l-35 27H99z" fill="#ffd43b" stroke="#181816" stroke-width="4"/></svg></div>
-            <div class="card-body"><h3>Diagnostika</h3><p>Ak je počítač pomalý, padá, neštartuje alebo sa prehrieva.</p></div>
+            <div class="card-body"><h3>Základná diagnostika</h3><p>Úvodná kontrola zariadenia a základné testy podľa toho, či je počítač pomalý, padá, neštartuje alebo sa prehrieva.</p></div>
         </div>
         <div class="visual-tile">
             <div class="card-art"><svg viewBox="0 0 500 280"><rect width="500" height="280" fill="#ded9cd"/><rect x="110" y="55" width="280" height="170" fill="#fbfaf6" stroke="#181816" stroke-width="4"/><rect x="145" y="88" width="82" height="105" fill="#ffd43b" stroke="#181816" stroke-width="4"/><rect x="257" y="88" width="98" height="45" fill="#d0cbc0" stroke="#181816" stroke-width="4"/><rect x="257" y="148" width="98" height="45" fill="#d0cbc0" stroke="#181816" stroke-width="4"/></svg></div>
@@ -46,4 +46,5 @@
     </div>
 </section>
 @include('partials.pricing', config('pricing.repairs'))
+@include('partials.service-contact')
 @endsection

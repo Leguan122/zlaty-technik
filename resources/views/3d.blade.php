@@ -45,5 +45,16 @@
         <div class="step"><div class="step-num">03</div><strong>Tlač</strong><span>Po odsúhlasení sa model vytlačí a podľa potreby doladí.</span></div>
     </div>
 </section>
+<section class="shell section" style="padding-top:18px">
+    <div class="section-title">
+        <div><div class="eyebrow">Možnosti tlače</div><h2>Rozmery a materiály</h2></div>
+    </div>
+    <div class="steps">
+        <div class="step"><strong>Prusa MINI+</strong><span>FDM tlač menších dielov. Tlačový priestor je 180 × 180 × 180 mm; použiteľný rozmer konkrétneho dielu závisí aj od orientácie a potrebných podpier.</span></div>
+        <div class="step"><strong>PLA a PETG po dohode</strong><span>PLA je vhodné na bežné modely a prototypy, PETG na praktické diely s vyššími nárokmi na odolnosť. Materiál a dostupnú farbu Vám potvrdím pred objednávkou.</span></div>
+        <div class="step"><strong>Väčšie diely</strong><span>Ak sa diel nezmestí do tlačového priestoru, po posúdení návrhu sa môžeme dohodnúť na rozdelení na viac častí. Vhodnosť materiálu posúdime podľa použitia dielu.</span></div>
+    </div>
+</section>
 @include('partials.pricing', config('pricing.3d'))
+@include('partials.service-contact')
 @endsection

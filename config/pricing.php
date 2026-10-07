@@ -10,6 +10,7 @@ return [
         ['Ostatné servisné a softvérové práce', '20 €/hod.'],
     ],
     'notes' => [
+        'Základná diagnostika za 15 € zahŕňa úvodnú kontrolu zariadenia a dostupné základné testy podľa prejavov poruchy. Náročnejšie rozoberanie a podrobnú diagnostiku nacením osobitne a vykonám až po Vašom odsúhlasení.',
         'Ceny sa vzťahujú na prácu. Náhradné diely a licencie sa účtujú osobitne. Pri čistení a prepastovaní je v cene bežná teplovodivá pasta; prípadné ďalšie potrebné materiály sa dohodnú vopred.',
         'Ak odsúhlasíte následnú opravu, zaplatených 15 € za diagnostiku sa odpočíta z ceny práce.',
         'Inštalácia systému nezahŕňa licenciu ani zálohovanie či prenos Vašich údajov. Tieto úkony sa dohodnú osobitne.',

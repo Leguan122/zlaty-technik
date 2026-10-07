@@ -22,6 +22,8 @@
         @media(max-width:767px){.page-art{display:none}}
         @media(max-width:620px){.shell{width:min(calc(100% - 24px),var(--max))}.brand small{display:none}.hero h1,.page-head h1{font-size:44px}.hero-art,.page-art{min-height:265px}.service-card{grid-template-columns:1fr}.card-art{border-right:0;border-bottom:1px solid var(--ink)}.field-row{grid-template-columns:1fr}.footer-inner{flex-direction:column}.quick{padding:23px}.menu .contact{margin-left:0}}
         .pricing-panel{border:1px solid var(--ink);background:var(--sheet);padding:clamp(18px,4vw,30px)}.pricing-table{width:100%;border-collapse:collapse;text-align:left}.pricing-caption{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%)}.pricing-table th,.pricing-table td{padding:13px 0;border-bottom:1px solid var(--line);vertical-align:top}.pricing-table thead th{font-family:"Courier New",monospace;font-size:12px;text-transform:uppercase}.pricing-table tbody th{font-size:15px;font-weight:700;padding-right:16px}.pricing-table td,.pricing-table thead th:last-child{text-align:right}.pricing-table td{font-weight:800;font-size:16px;width:34%}.pricing-notes{margin:18px 0;color:var(--muted);font-size:14px}.pricing-notes p{margin:8px 0}
+        .contact-methods{display:grid;gap:12px;margin-top:28px}.contact-method{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px;border:1px solid var(--ink);background:var(--paper)}.contact-method-label{display:block;font-family:"Courier New",monospace;font-size:10px;font-weight:900;text-transform:uppercase;color:#77746c}.contact-method-value{display:block;margin-top:3px;font-size:19px;font-weight:800;user-select:text;overflow-wrap:anywhere}.contact-method>span{min-width:0}.contact-copy{display:grid;place-items:center;flex-shrink:0;width:32px;height:32px;padding:6px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}.contact-copy[hidden]{display:none}.contact-copy:hover{background:var(--yellow)}.contact-copy:focus-visible{outline:2px solid var(--ink);outline-offset:3px}.contact-copy svg{width:18px;height:18px}.contact-copy-status{min-height:18px;margin:6px 0 0;color:var(--muted);font-size:12px}
+        .email-contact{max-width:560px}.service-contact h2{margin:0 0 12px;font-size:clamp(25px,4vw,34px);letter-spacing:-.035em}.service-contact>p{max-width:720px;color:var(--muted)}@media(max-width:560px){.contact-method{align-items:flex-start;gap:12px;padding:14px}.contact-method-value{font-size:16px}}
     </style>
     @stack('styles')
 </head>
@@ -42,5 +44,30 @@
 </header>
 <main>@yield('content')</main>
 <footer class="footer"><div class="shell footer-inner"><span>© {{ date('Y') }} Zlatý technik</span><span>Zvolen / Banská Bystrica a okolie</span></div></footer>
+<script>
+    document.querySelectorAll('[data-email-contact]').forEach((contact) => {
+        const copyButton = contact.querySelector('.contact-copy');
+        const emailText = contact.querySelector('[data-email-text]');
+        const copyStatus = contact.querySelector('.contact-copy-status');
+
+        if (!copyButton || !emailText || !copyStatus) return;
+        copyButton.hidden = false;
+        copyButton.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(emailText.textContent.trim());
+                copyStatus.textContent = 'E-mailová adresa bola skopírovaná.';
+            } catch {
+                const selection = window.getSelection();
+                if (selection) {
+                    const range = document.createRange();
+                    range.selectNodeContents(emailText);
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                }
+                copyStatus.textContent = 'Adresa je označená. Skopírujte ju, prosím, ručne.';
+            }
+        });
+    });
+</script>
 </body>
 </html>
