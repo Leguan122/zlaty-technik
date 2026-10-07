@@ -1,6 +1,6 @@
 @extends('layouts.site')
 @section('title', 'Kontakt | Zlatý technik')
-@section('description', 'Kontakt pre weby, IoT, 3D modelovanie a tlač, servis počítačov a notebookov.')
+@section('description', 'Kontakt pre hosting a opravy webov, IoT, 3D modelovanie a tlač, servis počítačov a notebookov.')
 
 @push('styles')
 <style>
@@ -42,7 +42,7 @@
             <div class="contact-guide">
                 <div class="contact-guide-row">
                     <span class="contact-guide-no">01</span>
-                    <div><strong>Čo potrebujete</strong><span>Web, IoT projekt, 3D diel alebo servis počítača či notebooku.</span></div>
+                    <div><strong>Čo potrebujete</strong><span>Hosting, oprava webu, IoT projekt, 3D diel alebo servis počítača či notebooku.</span></div>
                 </div>
                 <div class="contact-guide-row">
                     <span class="contact-guide-no">02</span>

@@ -1,7 +1,7 @@
 @extends('layouts.site')
 
-@section('title', 'Zlatý technik | Weby, IoT, 3D a počítače')
-@section('description', 'Weby, IoT projekty, 3D modelovanie a tlač, servis počítačov a notebookov vo Zvolene, Banskej Bystrici a okolí.')
+@section('title', 'Zlatý technik | Hosting, IoT, 3D a počítače')
+@section('description', 'Hosting a opravy webov, IoT projekty, 3D modelovanie a tlač, servis počítačov a notebookov vo Zvolene, Banskej Bystrici a okolí.')
 
 @push('styles')
 <style>
@@ -17,7 +17,7 @@
         <div class="intro-copy">
             <div class="eyebrow">digitálna & technická dielňa</div>
             <h1>Web. IoT. 3D. Počítače.</h1>
-            <p>Navrhujem a riešim menšie technické projekty — od webstránky cez senzor alebo 3D diel až po notebook, ktorý potrebuje servis.</p>
+            <p>Riešim menšie technické projekty — od hostingu a opravy webu cez senzor alebo 3D diel až po notebook, ktorý potrebuje servis.</p>
             <div class="actions">
                 <a class="btn btn-primary" href="#sluzby">Pozrieť služby</a>
                 <a class="btn btn-ghost" href="{{ route('contact') }}">Kontakt</a>
@@ -74,7 +74,7 @@
     </div>
 
     <a class="service-row" href="{{ route('web-it') }}">
-        <span class="service-no">01</span><h3>Weby & IT</h3><p>Webstránky, WordPress, Laravel, hosting a technické problémy.</p><span class="service-go">→</span>
+        <span class="service-no">01</span><h3>Weby & IT</h3><p>Hosting a opravy chýb na existujúcich weboch. Tvorbu nových webstránok neponúkam.</p><span class="service-go">→</span>
     </a>
     <a class="service-row" href="{{ route('iot') }}">
         <span class="service-no">02</span><h3>IoT & prototypy</h3><p>ESP32, senzory, zber dát a jednoduché automatizácie.</p><span class="service-go">→</span>

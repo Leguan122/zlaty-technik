@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="@yield('description', 'Weby, IoT, 3D modelovanie a tlač, servis počítačov a notebookov vo Zvolene a okolí.')">
+    <meta name="description" content="@yield('description', 'Hosting a opravy webov, IoT, 3D modelovanie a tlač, servis počítačov a notebookov vo Zvolene a okolí.')">
     <title>@yield('title', 'Zlatý technik')</title>
     <style>
         :root{--paper:#f1efe8;--sheet:#fbfaf6;--ink:#181816;--muted:#706f69;--line:#cfccc1;--yellow:#ffd43b;--yellow-soft:#fff0a8;--dark:#20201e;--max:1180px}
