@@ -9,7 +9,6 @@
 @endpush
 
 @section('content')
-@php($phone = config('contact.phone'))
 @php($email = config('contact.email'))
 
 <section class="shell section">
@@ -17,16 +16,9 @@
         <div class="contact-box">
             <div class="eyebrow">Kontakt</div>
             <h1>Máte projekt alebo technický problém?</h1>
-            <p>Ozvite sa telefonicky alebo e-mailom. Pri technickom dopyte stačí stručne uviesť, čo potrebujete vyriešiť.</p>
+            <p>Ozvite sa e-mailom. Pri technickom dopyte stačí stručne uviesť, čo potrebujete vyriešiť.</p>
 
             <div class="contact-methods">
-                @if($phone)
-                    <a class="contact-method" href="tel:{{ preg_replace('/[^0-9+]/', '', $phone) }}">
-                        <span><span class="contact-method-label">Telefón</span><span class="contact-method-value">{{ $phone }}</span></span>
-                        <span class="contact-method-arrow">→</span>
-                    </a>
-                @endif
-
                 @if($email)
                     <a class="contact-method" href="mailto:{{ $email }}">
                         <span><span class="contact-method-label">E-mail</span><span class="contact-method-value">{{ $email }}</span></span>
@@ -35,11 +27,11 @@
                 @endif
             </div>
 
-            @if(!$phone && !$email)
+            @if(!$email)
                 <div class="contact-empty">Kontaktné údaje sa doplnia pred spustením stránky.</div>
             @endif
 
-            <p class="privacy-note">Na stránke nie je kontaktný formulár. Komunikácia prebieha priamo cez telefón alebo e-mail.</p>
+            <p class="privacy-note">Na stránke nie je kontaktný formulár. Komunikácia prebieha priamo cez e-mail.</p>
         </div>
 
         <div class="contact-box">
