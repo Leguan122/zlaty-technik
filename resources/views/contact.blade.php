@@ -42,6 +42,7 @@
             <div class="contact-profile">
                 <div class="eyebrow">Kto za službou stojí</div>
                 <h2>Adam Kiss</h2>
+                <p>IČO: 54728657</p>
                 <p>Pod značkou Zlatý technik riešim menšie technické zákazky: hosting a opravy webov, IoT projekty, 3D modelovanie a tlač či servis počítačov a notebookov. Pri Vašom dopyte sa dohodneme, čo viem zabezpečiť a aký bude ďalší postup.</p>
             </div>
         </div>
@@ -81,10 +82,10 @@
             <h2>Môžem prísť aj k Vám</h2>
             <p>Ak Vám zaslanie nevyhovuje, môžeme sa dohodnúť na osobnom vyzdvihnutí zariadenia.</p>
             <dl class="contact-transport">
-                <div><dt>Okresy Banská Bystrica a Zvolen</dt><dd>Doprava pri vyzdvihnutí zdarma.</dd></div>
-                <div><dt>Mimo týchto okresov: 0,35 €/km</dt><dd>Cena zahŕňa palivo aj opotrebovanie auta. Počíta sa celá trasa z Lukavice k Vám a späť.</dd></div>
+                <div><dt>Do 20 km od Lukavice</dt><dd>Doprava pri vyzdvihnutí zdarma. Vzdialenosť sa počíta po cestnej trase jedným smerom.</dd></div>
+                <div><dt>Nad 20 km od Lukavice: 0,35 €/km</dt><dd>Cena zahŕňa palivo aj opotrebovanie auta. Pri vzdialenosti nad 20 km sa účtuje celá trasa z Lukavice k Vám a späť.</dd></div>
             </dl>
-            <p>Napríklad pri trase mimo uvedených okresov dlhej 40 km tam a 40 km späť stojí doprava 28 €. Cenu dopravy Vám potvrdím pred výjazdom; cena servisu sa dohodne samostatne.</p>
+            <p>Napríklad pri vzdialenosti 40 km od Lukavice sa počíta 40 km tam a 40 km späť, teda doprava stojí 28 €. Cenu dopravy Vám potvrdím pred výjazdom; cena servisu sa dohodne samostatne.</p>
         </div>
     </div>
 </section>
