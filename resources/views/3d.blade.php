@@ -45,4 +45,14 @@
         <div class="step"><div class="step-num">03</div><strong>Tlač</strong><span>Po odsúhlasení sa model vytlačí a podľa potreby doladí.</span></div>
     </div>
 </section>
+@include('partials.pricing', [
+    'items' => [
+        ['Jednoduché 3D modelovanie a úpravy modelu', '15 €/hod.'],
+        ['3D tlač — minimálna cena zákazky', '10 €'],
+    ],
+    'notes' => [
+        'Cena tlače závisí od materiálu, jeho spotreby, času tlače a potrebných dokončovacích úprav. Modelovanie sa účtuje osobitne; ak dodáte použiteľný hotový model, nie je potrebné.',
+        'Presnú cenu modelovania aj tlače Vám potvrdím po posúdení modelu, rozmerov alebo náčrtu. Pri hodinovom modelovaní sa vopred dohodneme na odhade a cenovom limite.',
+    ],
+])
 @endsection

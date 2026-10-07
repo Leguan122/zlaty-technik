@@ -45,4 +45,19 @@
         <div class="step"><div class="step-num">03</div><strong>Dohoda</strong><span>Ak oprava dáva zmysel, dohodneme ďalší postup.</span></div>
     </div>
 </section>
+@include('partials.pricing', [
+    'items' => [
+        ['Základná diagnostika PC alebo notebooku', '15 €'],
+        ['Inštalácia systému a ovládačov', 'od 30 €'],
+        ['Výmena SSD alebo RAM a overenie funkčnosti', 'od 20 €'],
+        ['Čistenie a prepastovanie', 'od 35 €'],
+        ['Ostatné servisné a softvérové práce', '20 €/hod.'],
+    ],
+    'notes' => [
+        'Ceny sa vzťahujú na prácu. Náhradné diely a licencie sa účtujú osobitne. Pri čistení a prepastovaní je v cene bežná teplovodivá pasta; prípadné ďalšie potrebné materiály sa dohodnú vopred.',
+        'Ak odsúhlasíte následnú opravu, zaplatených 15 € za diagnostiku sa odpočíta z ceny práce.',
+        'Inštalácia systému nezahŕňa licenciu ani zálohovanie či prenos Vašich údajov. Tieto úkony sa dohodnú osobitne.',
+        'Pri hodinovej práci sa vopred dohodneme na odhade a cenovom limite. Doprava sa riadi cenníkom na kontaktnej stránke.',
+    ],
+])
 @endsection

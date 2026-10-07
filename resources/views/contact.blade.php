@@ -42,7 +42,7 @@
             <div class="contact-profile">
                 <div class="eyebrow">Kto za službou stojí</div>
                 <h2>Adam Kiss</h2>
-                <p>IČO: 54728657</p>
+                <p>IČO: 54728657 · Nie som platiteľ DPH.</p>
                 <p>Pod značkou Zlatý technik riešim menšie technické zákazky: hosting a opravy webov, IoT projekty, 3D modelovanie a tlač či servis počítačov a notebookov. Pri Vašom dopyte sa dohodneme, čo viem zabezpečiť a aký bude ďalší postup.</p>
             </div>
         </div>
