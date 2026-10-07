@@ -62,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            <p class="mini-caption">Reálne ukážky projektov budú pribúdať postupne.</p>
+            {{-- <p class="mini-caption">Reálne ukážky projektov budú pribúdať postupne.</p> --}}
         </div>
     </div>
 </section>
@@ -87,6 +87,7 @@
     </a>
 </section>
 
+{{-- Ukážky sú dočasne skryté, kým budú k dispozícii reálne projekty.
 <section class="shell section">
     <div class="section-title">
         <div><div class="eyebrow">ukážky</div><h2>Ukážky konkrétnych projektov</h2></div>
@@ -130,6 +131,7 @@
         </article>
     </div>
 </section>
+--}}
 
 <section class="shell section" style="padding-top:24px">
     <div class="human-cta">
