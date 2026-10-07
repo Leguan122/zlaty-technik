@@ -1,4 +1,4 @@
-<section class="shell section" style="padding-top:18px">
+<section class="shell section pricing-section" id="cennik" style="padding-top:18px">
     <div class="section-title">
         <div><div class="eyebrow">Cena</div><h2>Orientačný cenník</h2></div>
     </div>

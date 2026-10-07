@@ -7,7 +7,7 @@
         <div class="eyebrow">3D modelovanie & tlač</div>
         <h1>Keď potrebujete konkrétny diel, nie katalógový kompromis.</h1>
         <p>Jednoduché krabičky, držiaky, adaptéry, náhradné diely a prototypy podľa rozmerov alebo náčrtu.</p>
-        <div class="actions"><a class="btn btn-primary" href="{{ route('contact') }}">Dopyt na 3D výrobu</a></div>
+        <div class="actions"><a class="btn btn-primary" href="{{ route('contact') }}">Dopyt na 3D výrobu</a><a class="btn btn-ghost" href="#cennik">Orientačný cenník</a></div>
     </div>
     <div class="page-art">
         <svg viewBox="0 0 700 430" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">

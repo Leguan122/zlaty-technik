@@ -7,7 +7,7 @@
         <div class="eyebrow">Počítače & notebooky</div>
         <h1>Najprv zistiť problém. Potom meniť diely.</h1>
         <p>Diagnostika, upgrade, softvérové problémy a vybrané opravy počítačov a notebookov.</p>
-        <div class="actions"><a class="btn btn-primary" href="{{ route('contact') }}">Dopyt na servis</a></div>
+        <div class="actions"><a class="btn btn-primary" href="{{ route('contact') }}">Dopyt na servis</a><a class="btn btn-ghost" href="#cennik">Orientačný cenník</a></div>
     </div>
     <div class="page-art">
         <svg viewBox="0 0 700 430" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
