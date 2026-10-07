@@ -6,6 +6,9 @@
 <style>
     .contact-direct{display:grid;grid-template-columns:.95fr 1.05fr;gap:18px}.contact-box{border:1px solid var(--ink);background:var(--sheet);padding:30px}.contact-box h1{margin:9px 0 12px;font-size:clamp(39px,5vw,58px);line-height:.98;letter-spacing:-.055em}.contact-box>p{max-width:560px;color:var(--muted);font-size:17px}.contact-methods{display:grid;gap:12px;margin-top:28px}.contact-method{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px;border:1px solid var(--ink);background:var(--paper)}.contact-method-label{display:block;font-family:"Courier New",monospace;font-size:10px;font-weight:900;text-transform:uppercase;color:#77746c}.contact-method-value{display:block;margin-top:3px;font-size:19px;font-weight:800;user-select:text;overflow-wrap:anywhere}.contact-method>span{min-width:0}.contact-copy{display:grid;place-items:center;flex-shrink:0;width:32px;height:32px;padding:6px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}.contact-copy[hidden]{display:none}.contact-copy:hover{background:var(--yellow)}.contact-copy:focus-visible{outline:2px solid var(--ink);outline-offset:3px}.contact-copy svg{width:18px;height:18px}.contact-copy-status{min-height:18px;margin:6px 0 0;color:var(--muted);font-size:12px}.contact-empty{margin-top:24px;padding:16px;border:1px dashed var(--ink);color:var(--muted);font-size:14px}.contact-guide{display:grid;gap:0;margin-top:22px;border-top:1px solid var(--ink)}.contact-guide-row{display:grid;grid-template-columns:38px 1fr;gap:14px;padding:17px 0;border-bottom:1px solid var(--ink)}.contact-guide-no{font-family:"Courier New",monospace;font-size:11px;font-weight:900;background:var(--yellow);width:30px;height:24px;display:grid;place-items:center}.contact-guide-row strong{display:block;margin-bottom:3px}.contact-guide-row span{color:var(--muted);font-size:14px}.privacy-note{margin-top:18px;color:#77746c;font-size:12px}@media(max-width:900px){.contact-direct{grid-template-columns:1fr}}@media(max-width:560px){.contact-method{align-items:flex-start}.contact-method-value{font-size:16px}}
 </style>
+<style>
+    .contact-profile{margin-top:26px;padding-top:20px;border-top:1px solid var(--line)}.contact-profile h2,.contact-logistics h2{margin:8px 0 12px;font-size:26px;letter-spacing:-.035em}.contact-profile p,.contact-logistics p{color:var(--muted);font-size:15px}.contact-logistics{margin-top:18px}.contact-address{font-style:normal;font-size:17px;line-height:1.7}.contact-transport{margin:20px 0}.contact-transport div{padding:12px 0;border-top:1px solid var(--line)}.contact-transport div:last-child{border-bottom:1px solid var(--line)}.contact-transport dt{font-weight:800}.contact-transport dd{margin:4px 0 0;color:var(--muted);font-size:15px}
+</style>
 @endpush
 
 @section('content')
@@ -35,6 +38,12 @@
             @endif
 
             <p class="privacy-note">Na stránke nie je kontaktný formulár. Komunikácia prebieha priamo cez e-mail.</p>
+
+            <div class="contact-profile">
+                <div class="eyebrow">Kto za službou stojí</div>
+                <h2>Adam Kiss</h2>
+                <p>Pod značkou Zlatý technik riešim menšie technické zákazky: hosting a opravy webov, IoT projekty, 3D modelovanie a tlač či servis počítačov a notebookov. Pri Vašom dopyte sa dohodneme, čo viem zabezpečiť a aký bude ďalší postup.</p>
+            </div>
         </div>
 
         <div class="contact-box">
@@ -53,6 +62,29 @@
                     <div><strong>Podklady</strong><span>Ak sú k dispozícii, priložte fotografie, rozmery, model zariadenia alebo jednoduchý náčrt.</span></div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="contact-direct contact-logistics">
+        <div class="contact-box">
+            <div class="eyebrow">Zaslanie zariadenia</div>
+            <h2>Kam môžete poslať zásielku</h2>
+            <address class="contact-address">
+                Adam Kiss<br>
+                Lukavická 1361/7<br>
+                962 31 Lukavica
+            </address>
+            <p>Pred odoslaním ma, prosím, kontaktujte e-mailom, aby sme sa dohodli na prijatí a ďalšom postupe. Zariadenie bezpečne zabaľte a priložte svoje meno, e-mail a stručný popis problému.</p>
+        </div>
+        <div class="contact-box">
+            <div class="eyebrow">Vyzdvihnutie po dohode</div>
+            <h2>Môžem prísť aj k Vám</h2>
+            <p>Ak Vám zaslanie nevyhovuje, môžeme sa dohodnúť na osobnom vyzdvihnutí zariadenia.</p>
+            <dl class="contact-transport">
+                <div><dt>Okresy Banská Bystrica a Zvolen</dt><dd>Doprava pri vyzdvihnutí zdarma.</dd></div>
+                <div><dt>Mimo týchto okresov: 0,35 €/km</dt><dd>Cena zahŕňa palivo aj opotrebovanie auta. Počíta sa celá trasa z Lukavice k Vám a späť.</dd></div>
+            </dl>
+            <p>Napríklad pri trase mimo uvedených okresov dlhej 40 km tam a 40 km späť stojí doprava 28 €. Cenu dopravy Vám potvrdím pred výjazdom; cena servisu sa dohodne samostatne.</p>
         </div>
     </div>
 </section>
